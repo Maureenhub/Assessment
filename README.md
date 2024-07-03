@@ -82,31 +82,20 @@ No authentication token is generated.
 Actual Result: (Scenarios failed as expected)
 Status: (Fail)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Test Case Login: Successful Login
 Title: Successful Login
 Description:
 Verify that a user with valid credentials can successfully log into the adjutor web application.
+
 Pre-conditions:
 The user must be registered in the system with valid credentials.
 The Authentication API should be up and running.
 The user has access to the adjutor web application
+
 Test Data:
 Username: testuser@test.com
 Password: Test@1234
+
 Test Steps:
 Open the Capital Cash app.
 Navigate to the login screen.
@@ -115,16 +104,12 @@ Enter the password Welcome@223 in  the password field.
 Click the "Login" button.
 Enter the OTP sent to your email or the token from your authenticator app to validate your login.
 User is redirected to the dashboard.
+
 Expected Result:
 The user is successfully logged into the app.
 The user is redirected to the dashboard/home screen of the app.
 Actual Result: The user is successfully logged into the app.
 Status: (Pass)
-
-
-
-
-
 
 Test Case: Failed Login
 Title: Failed Login
@@ -146,10 +131,12 @@ Navigate to the login screen.
 Enter the username maureenutem@gmail.com in the username/email field.
 Enter the password “welcome@123” in the password field.
 Click the "Login" button.
+
 Expected Result:
 The system does not authenticate the user.
 An error message is displayed indicating that the login attempt was unsuccessful (“Incorrect login credentials").
 The user remains on the login screen.
+
 Actual Result: An error message is displayed indicating that the login attempt was unsuccessful (“Incorrect login credentials").
 Status: (Fail)
 
@@ -165,6 +152,7 @@ The user must have a valid access token.
 
 Test Data:
 Access Token: ValidAccessToken123
+
 Test Steps:
 On the dashboard, click on apps
 Click on get started
