@@ -236,10 +236,10 @@ Method: POST
 URL: /api/auth/login
 Headers: Content-Type: application/json
 Body:
-{
+```{
   "username": "testuser@test.com",
   "password": "Test@1234"
-}
+}```
 Tests:
 pm.test("Status code is 200", function () {
     pm.response.to.have.status(200);
